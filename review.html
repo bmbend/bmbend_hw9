@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BA Student Survey • Page 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE_HERE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+    <header class="py-4 bg-white border-bottom">
+        <div class="container d-flex align-items-center gap-3">
+            <img src="https://dummyimage.com/64x64/111/fff&text=BA" alt="BAIS logo" width="48" height="48"
+                class="rounded">
+            <h1 class="h4 mb-0">Business Analytics Student Survey</h1>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form class="card shadow-sm" action="bmbend_ty.html" method="post" novalidate>
+                    <div class="card-body p-4">
+                        <!-- Academic year (required radios) -->
+                        <fieldset class="mb-4">
+                            <legend class="h6">I am finishing my <span class="text-danger">(required)</span></legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="year" id="y1" value="first" required>
+                                <label class="form-check-label" for="y1">first year at Iowa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="year" id="y2" value="second">
+                                <label class="form-check-label" for="y2">second year at Iowa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="year" id="y3" value="third">
+                                <label class="form-check-label" for="y3">third year at Iowa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="year" id="y4" value="fourth">
+                                <label class="form-check-label" for="y4">fourth year at Iowa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="year" id="y5" value="fifth_plus">
+                                <label class="form-check-label" for="y5">fifth or more year at Iowa</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Optional: identity with tooltip text provided in assignment -->
+                        <div class="mb-4">
+                            <label for="identity" class="form-label">
+                                I identify as
+                                <span class="tooltip">
+                                    <i class="fa-solid fa-circle-info fontawesome" aria-hidden="true"></i>
+                                    <span class="tooltiptext">
+                                        Letting us know how you identify yourself helps us measure and
+                                        enhance diversity and inclusivity in tech by addressing historical
+                                        gender imbalances.
+                                    </span>
+                                </span>
+                            </label>
+                            <select id="identity" name="identity" class="form-select" aria-describedby="idHelp">
+                                <option value="">Prefer not to say</option>
+                                <option value="woman">Woman</option>
+                                <option value="man">Man</option>
+                                <option value="nonbinary">Non-binary</option>
+                                <option value="selfdescribe">Self-describe</option>
+                            </select>
+                            <div id="idHelp" class="form-text">This question is optional.</div>
+                        </div>
+
+                        <!-- BAIS core classes (checkboxes) -->
+                        <fieldset class="mb-3">
+                            <legend class="h6">BAIS core class I have completed <span class="text-danger">(at least one
+                                    if applicable)</span></legend>
+                            <div class="form-check"><input id="c1" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Information Systems"><label class="form-check-label"
+                                    for="c1">Information Systems</label></div>
+                            <div class="form-check"><input id="c2" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Operations"><label class="form-check-label"
+                                    for="c2">Operations</label></div>
+                            <div class="form-check"><input id="c3" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Foundations of Business Analytics"><label
+                                    class="form-check-label" for="c3">Foundations of Business Analytics</label></div>
+                            <div class="form-check"><input id="c4" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Computational Thinking"><label class="form-check-label"
+                                    for="c4">Computational Thinking</label></div>
+                            <div class="form-check"><input id="c5" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Database Management"><label class="form-check-label"
+                                    for="c5">Database Management</label></div>
+                            <div class="form-check"><input id="c6" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Data Wrangling"><label class="form-check-label"
+                                    for="c6">Data Wrangling</label></div>
+                            <div class="form-check"><input id="c7" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="Data Mining"><label class="form-check-label"
+                                    for="c7">Data Mining</label></div>
+                            <div class="form-check"><input id="c8" class="form-check-input" type="checkbox"
+                                    name="bais_classes" value="BAIS Capstone"><label class="form-check-label"
+                                    for="c8">BAIS Capstone</label></div>
+                        </fieldset>
+
+                        <p class="small text-muted mb-3">page 2 of 2</p>
+
+                        <div class="d-flex gap-3">
+                            <button type="button" class="btn btn-outline-secondary"
+                                onclick="window.location.href='bmbend_p1.html';">
+                                Back
+                            </button>
+                            <button type="submit" class="btn btn-success">Finish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
